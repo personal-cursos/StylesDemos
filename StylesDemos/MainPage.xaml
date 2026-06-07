@@ -22,14 +22,15 @@
     </ContentPage.Resources>
     
     <ScrollView>
-        <ScrollView.Resources>
-            <Style TargetType="VerticalStackLayout"/>
-        </ScrollView.Resources>
         <VerticalStackLayout>
-            <Button
-                Text="LOGIN"/>
-            <Button
-                Text="VISIT WEDSITE"/>
+            <Button Text="LOGIN">
+                <Button.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Orange"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Text="VISIT WEDSITE"/>
         </VerticalStackLayout>
 
     </ScrollView>
