@@ -4,33 +4,17 @@
              x:Class="StylesDemos.MainPage">
 
     <ContentPage.Resources>
-        <Color x:Key="bgcolor">#db3a34</Color>
-        <Color x:Key="textcolor">#ffc857</Color>
-        <Style TargetType="VerticalStackLayout">
-            <Setter Property="VerticalOptions" Value="Center"/>
-            <Setter Property="Padding" Value="30,0"/>
-            <Setter Property="Spacing" Value="25"/>
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="{StaticResource bgcolor}"/>
-            <Setter Property="FontAttributes" Value="Bold"/>
-            <Setter Property="FontSize" Value="Large"/>
-            <Setter Property="TextColor" Value="{StaticResource textcolor}"/>
-        </Style>
-        
-        
+
+
     </ContentPage.Resources>
     
     <ScrollView>
         <VerticalStackLayout>
             <Button Text="LOGIN">
-                <Button.Resources>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="Orange"/>
-                    </Style>
-                </Button.Resources>
             </Button>
-            <Button Text="VISIT WEDSITE"/>
+            <Button Text="VISIT WEDSITE"
+                    Style="{StaticResource specialButton}">
+            </Button>    
         </VerticalStackLayout>
 
     </ScrollView>
